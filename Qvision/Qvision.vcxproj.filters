@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Distribution Files">
+      <UniqueIdentifier>{B83CAF91-C7BF-462F-B76C-EA11631F866C}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Distribution Files">
+      <UniqueIdentifier>{B83CAF91-C7BF-462F-B76C-EA11631F866C}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DarkStyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="framelesswindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="windowdragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="DarkStyle.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="\">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="framelesswindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="windowdragger.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_DarkStyle.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_DarkStyle.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_framelesswindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_framelesswindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <ClCompile Include="debug\moc_windowdragger.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_windowdragger.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_darkstyle.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qrc_darkstyle.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_framelesswindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qrc_framelesswindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_image.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qrc_image.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClInclude Include="ui_framelesswindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_mainwindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="framelesswindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\BR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\QR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\articulation.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\background.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\background01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\background02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\blue_help.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\blue_path.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\blue_quit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\blue_undo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\caricature.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\cha.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\chuizhi.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\clear.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="darkstyle.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="darkstyle\darkstyle.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="framelesswindow.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="image\help.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_branch_closed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_branch_end.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_branch_more.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_branch_open.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_checkbox_checked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_checkbox_checked_disabled.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_checkbox_checked_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_checkbox_indeterminate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_checkbox_indeterminate_disabled.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_checkbox_indeterminate_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_checkbox_unchecked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_checkbox_unchecked_disabled.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_checkbox_unchecked_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_radiobutton_checked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_radiobutton_checked_disabled.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_radiobutton_checked_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_radiobutton_unchecked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_radiobutton_unchecked_disabled.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_radiobutton_unchecked_pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_restore.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_undock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="darkstyle\icon_vline.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\icon_window_close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\icon_window_maximize.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\icon_window_minimize.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\icon_window_restore.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="image.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="image\loading.gif">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\logo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\next.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\picture.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\prev.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\save.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\setting.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\shuiping.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\turn-left.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\turn-right.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\word.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Qvision.pro.user">
+      <Filter>Distribution Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

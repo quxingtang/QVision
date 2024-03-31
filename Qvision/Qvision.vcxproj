@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F44532F1-A793-3F51-A3CC-E77B69C2F26B}</ProjectGuid>
+    <RootNamespace>Qvision</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.19041.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>Qvision</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>Qvision</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Qvision</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Qvision</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;D:\OpenCV\build\include;D:\OpenCV\build\include\opencv2;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\include;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;release;.;/include;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\OpenCV\build\x64\mingw\lib\libopencv_*.dll.a;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Widgets.lib;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Gui.lib;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Core.lib;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\lib\qtmain.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\Qvision.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;D:\OpenCV\build\include;D:\OpenCV\build\include\opencv2;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\include;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;debug;.;/include;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\OpenCV\build\x64\mingw\lib\libopencv_*d.dll.a;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Widgetsd.lib;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Guid.lib;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Cored.lib;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\lib\qtmaind.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\Qvision.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DarkStyle.cpp" />
+    <ClCompile Include="framelesswindow.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="windowdragger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="DarkStyle.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">DarkStyle.h;release\moc_predefs.h;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Users/Administrator/Desktop/Qvision/Qvision/release/moc_predefs.h -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/Users/Administrator/Desktop/Qvision/Qvision -ID:/OpenCV/build/include -ID:/OpenCV/build/include/opencv2 -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include&quot; -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; DarkStyle.h -o release\moc_DarkStyle.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC DarkStyle.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_DarkStyle.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">DarkStyle.h;debug\moc_predefs.h;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Users/Administrator/Desktop/Qvision/Qvision/debug/moc_predefs.h -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/Users/Administrator/Desktop/Qvision/Qvision -ID:/OpenCV/build/include -ID:/OpenCV/build/include/opencv2 -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include&quot; -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; DarkStyle.h -o debug\moc_DarkStyle.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC DarkStyle.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_DarkStyle.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="\" />
+    <CustomBuild Include="framelesswindow.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">framelesswindow.h;release\moc_predefs.h;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Users/Administrator/Desktop/Qvision/Qvision/release/moc_predefs.h -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/Users/Administrator/Desktop/Qvision/Qvision -ID:/OpenCV/build/include -ID:/OpenCV/build/include/opencv2 -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include&quot; -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; framelesswindow.h -o release\moc_framelesswindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC framelesswindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_framelesswindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">framelesswindow.h;debug\moc_predefs.h;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Users/Administrator/Desktop/Qvision/Qvision/debug/moc_predefs.h -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/Users/Administrator/Desktop/Qvision/Qvision -ID:/OpenCV/build/include -ID:/OpenCV/build/include/opencv2 -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include&quot; -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; framelesswindow.h -o debug\moc_framelesswindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC framelesswindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_framelesswindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">mainwindow.h;release\moc_predefs.h;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Users/Administrator/Desktop/Qvision/Qvision/release/moc_predefs.h -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/Users/Administrator/Desktop/Qvision/Qvision -ID:/OpenCV/build/include -ID:/OpenCV/build/include/opencv2 -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include&quot; -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">mainwindow.h;debug\moc_predefs.h;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Users/Administrator/Desktop/Qvision/Qvision/debug/moc_predefs.h -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/Users/Administrator/Desktop/Qvision/Qvision -ID:/OpenCV/build/include -ID:/OpenCV/build/include/opencv2 -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include&quot; -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="windowdragger.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">windowdragger.h;release\moc_predefs.h;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Users/Administrator/Desktop/Qvision/Qvision/release/moc_predefs.h -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/Users/Administrator/Desktop/Qvision/Qvision -ID:/OpenCV/build/include -ID:/OpenCV/build/include/opencv2 -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include&quot; -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; windowdragger.h -o release\moc_windowdragger.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC windowdragger.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_windowdragger.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">windowdragger.h;debug\moc_predefs.h;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Users/Administrator/Desktop/Qvision/Qvision/debug/moc_predefs.h -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/Users/Administrator/Desktop/Qvision/Qvision -ID:/OpenCV/build/include -ID:/OpenCV/build/include/opencv2 -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -ID:/Qt5/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include&quot; -I&quot;D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include&quot; -I&quot;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; windowdragger.h -o debug\moc_windowdragger.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC windowdragger.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_windowdragger.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_DarkStyle.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_DarkStyle.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_framelesswindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_framelesswindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">cl -Bx&quot;$(QTDIR)\bin\qmake.exe&quot; -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -Zi -MDd -std:c++17 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">cl -Bx&quot;$(QTDIR)\bin\qmake.exe&quot; -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -std:c++17 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="debug\moc_windowdragger.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_windowdragger.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_darkstyle.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_darkstyle.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_framelesswindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_framelesswindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_image.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_image.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_framelesswindow.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="framelesswindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">framelesswindow.ui;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\uic.exe;windowdragger.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\uic.exe framelesswindow.ui -o ui_framelesswindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC framelesswindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_framelesswindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">framelesswindow.ui;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\uic.exe;windowdragger.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\uic.exe framelesswindow.ui -o ui_framelesswindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC framelesswindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_framelesswindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">mainwindow.ui;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">mainwindow.ui;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\BR.png" />
+    <None Include="image\QR.png" />
+    <None Include="image\articulation.png" />
+    <None Include="image\background.png" />
+    <None Include="image\background01.png" />
+    <None Include="image\background02.png" />
+    <None Include="image\blue_help.png" />
+    <None Include="image\blue_path.png" />
+    <None Include="image\blue_quit.png" />
+    <None Include="image\blue_undo.png" />
+    <None Include="image\caricature.png" />
+    <None Include="image\cha.png" />
+    <None Include="image\chuizhi.png" />
+    <None Include="image\clear.png" />
+    <CustomBuild Include="darkstyle.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">darkstyle.qrc;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe;darkstyle\icon_checkbox_indeterminate_disabled.png;darkstyle\icon_checkbox_indeterminate_pressed.png;darkstyle\icon_vline.png;darkstyle\icon_branch_open.png;darkstyle\icon_radiobutton_checked_pressed.png;darkstyle\icon_checkbox_checked.png;darkstyle\darkstyle.qss;darkstyle\icon_close.png;darkstyle\icon_checkbox_checked_disabled.png;darkstyle\icon_checkbox_checked_pressed.png;darkstyle\icon_radiobutton_checked_disabled.png;darkstyle\icon_restore.png;darkstyle\icon_checkbox_unchecked_disabled.png;darkstyle\icon_radiobutton_unchecked_pressed.png;darkstyle\icon_radiobutton_unchecked.png;darkstyle\icon_undock.png;darkstyle\icon_branch_end.png;darkstyle\icon_checkbox_indeterminate.png;darkstyle\icon_checkbox_unchecked_pressed.png;darkstyle\icon_branch_closed.png;darkstyle\icon_radiobutton_checked.png;darkstyle\icon_radiobutton_unchecked_disabled.png;darkstyle\icon_branch_more.png;darkstyle\icon_checkbox_unchecked.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe -name darkstyle darkstyle.qrc -o release\qrc_darkstyle.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC darkstyle.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_darkstyle.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">darkstyle.qrc;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe;darkstyle\icon_checkbox_indeterminate_disabled.png;darkstyle\icon_checkbox_indeterminate_pressed.png;darkstyle\icon_vline.png;darkstyle\icon_branch_open.png;darkstyle\icon_radiobutton_checked_pressed.png;darkstyle\icon_checkbox_checked.png;darkstyle\darkstyle.qss;darkstyle\icon_close.png;darkstyle\icon_checkbox_checked_disabled.png;darkstyle\icon_checkbox_checked_pressed.png;darkstyle\icon_radiobutton_checked_disabled.png;darkstyle\icon_restore.png;darkstyle\icon_checkbox_unchecked_disabled.png;darkstyle\icon_radiobutton_unchecked_pressed.png;darkstyle\icon_radiobutton_unchecked.png;darkstyle\icon_undock.png;darkstyle\icon_branch_end.png;darkstyle\icon_checkbox_indeterminate.png;darkstyle\icon_checkbox_unchecked_pressed.png;darkstyle\icon_branch_closed.png;darkstyle\icon_radiobutton_checked.png;darkstyle\icon_radiobutton_unchecked_disabled.png;darkstyle\icon_branch_more.png;darkstyle\icon_checkbox_unchecked.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe -name darkstyle darkstyle.qrc -o debug\qrc_darkstyle.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC darkstyle.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_darkstyle.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="darkstyle\darkstyle.qss" />
+    <CustomBuild Include="framelesswindow.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">framelesswindow.qrc;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe;images\icon_window_minimize.png;images\icon_window_close.png;images\icon_window_restore.png;images\icon_window_maximize.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe -name framelesswindow framelesswindow.qrc -o release\qrc_framelesswindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC framelesswindow.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_framelesswindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">framelesswindow.qrc;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe;images\icon_window_minimize.png;images\icon_window_close.png;images\icon_window_restore.png;images\icon_window_maximize.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe -name framelesswindow framelesswindow.qrc -o debug\qrc_framelesswindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC framelesswindow.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_framelesswindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="image\help.png" />
+    <None Include="darkstyle\icon_branch_closed.png" />
+    <None Include="darkstyle\icon_branch_end.png" />
+    <None Include="darkstyle\icon_branch_more.png" />
+    <None Include="darkstyle\icon_branch_open.png" />
+    <None Include="darkstyle\icon_checkbox_checked.png" />
+    <None Include="darkstyle\icon_checkbox_checked_disabled.png" />
+    <None Include="darkstyle\icon_checkbox_checked_pressed.png" />
+    <None Include="darkstyle\icon_checkbox_indeterminate.png" />
+    <None Include="darkstyle\icon_checkbox_indeterminate_disabled.png" />
+    <None Include="darkstyle\icon_checkbox_indeterminate_pressed.png" />
+    <None Include="darkstyle\icon_checkbox_unchecked.png" />
+    <None Include="darkstyle\icon_checkbox_unchecked_disabled.png" />
+    <None Include="darkstyle\icon_checkbox_unchecked_pressed.png" />
+    <None Include="darkstyle\icon_close.png" />
+    <None Include="darkstyle\icon_radiobutton_checked.png" />
+    <None Include="darkstyle\icon_radiobutton_checked_disabled.png" />
+    <None Include="darkstyle\icon_radiobutton_checked_pressed.png" />
+    <None Include="darkstyle\icon_radiobutton_unchecked.png" />
+    <None Include="darkstyle\icon_radiobutton_unchecked_disabled.png" />
+    <None Include="darkstyle\icon_radiobutton_unchecked_pressed.png" />
+    <None Include="darkstyle\icon_restore.png" />
+    <None Include="darkstyle\icon_undock.png" />
+    <None Include="darkstyle\icon_vline.png" />
+    <None Include="images\icon_window_close.png" />
+    <None Include="images\icon_window_maximize.png" />
+    <None Include="images\icon_window_minimize.png" />
+    <None Include="images\icon_window_restore.png" />
+    <CustomBuild Include="image.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">image.qrc;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe;image\clear.png;image\help.png;image\turn-left.png;image\turn-right.png;image\background.png;image\prev.png;image\setting.png;image\logo.ico;image\picture.png;image\word.png;image\loading.gif;image\chuizhi.png;image\blue_help.png;image\blue_undo.png;image\QR.png;image\blue_quit.png;image\cha.png;image\blue_path.png;image\articulation.png;image\shuiping.png;image\save.png;image\caricature.png;image\next.png;image\background01.png;image\BR.png;image\background02.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe -name image image.qrc -o release\qrc_image.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC image.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_image.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">image.qrc;D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe;image\clear.png;image\help.png;image\turn-left.png;image\turn-right.png;image\background.png;image\prev.png;image\setting.png;image\logo.ico;image\picture.png;image\word.png;image\loading.gif;image\chuizhi.png;image\blue_help.png;image\blue_undo.png;image\QR.png;image\blue_quit.png;image\cha.png;image\blue_path.png;image\articulation.png;image\shuiping.png;image\save.png;image\caricature.png;image\next.png;image\background01.png;image\BR.png;image\background02.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe -name image image.qrc -o debug\qrc_image.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC image.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_image.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="image\loading.gif" />
+    <None Include="image\logo.ico" />
+    <None Include="image\next.png" />
+    <None Include="image\picture.png" />
+    <None Include="image\prev.png" />
+    <None Include="image\save.png" />
+    <None Include="image\setting.png" />
+    <None Include="image\shuiping.png" />
+    <None Include="image\turn-left.png" />
+    <None Include="image\turn-right.png" />
+    <None Include="image\word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Qvision.pro.user" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

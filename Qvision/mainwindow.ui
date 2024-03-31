@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-40</y>
+      <width>1081</width>
+      <height>700</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label_dst">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>130</y>
+       <width>620</width>
+       <height>349</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::WinPanel</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>100</y>
+       <width>331</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_src1">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_src2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1080</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_open"/>
+    <addaction name="action_save"/>
+    <addaction name="action_clear"/>
+    <addaction name="action_back"/>
+    <addaction name="separator"/>
+    <addaction name="action_exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>形态学操作</string>
+    </property>
+    <addaction name="action_select_scope"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>图像滤波</string>
+    </property>
+    <addaction name="action_bulr"/>
+    <addaction name="action_boxFilter"/>
+    <addaction name="action_GaussFilter"/>
+    <addaction name="action_midian"/>
+    <addaction name="action_bilateral"/>
+    <addaction name="actionGuidedFilter"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>图像增强与变换</string>
+    </property>
+    <widget class="QMenu" name="menu_12">
+     <property name="title">
+      <string>霍夫变换</string>
+     </property>
+     <addaction name="action_huofu_line"/>
+     <addaction name="action_huofu_yuan"/>
+    </widget>
+    <widget class="QMenu" name="menu_13">
+     <property name="title">
+      <string>直方图</string>
+     </property>
+     <addaction name="action_hist_line"/>
+     <addaction name="action_hist_colu"/>
+     <addaction name="action_equalizehist"/>
+    </widget>
+    <addaction name="action_tiaojie_liangdu_duibidu"/>
+    <addaction name="action_warpAffine"/>
+    <addaction name="action_toushibianhuan"/>
+    <addaction name="action_logPolar"/>
+    <addaction name="action_kx_b"/>
+    <addaction name="menu_12"/>
+    <addaction name="menu_13"/>
+    <addaction name="actionPoissonFusion"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>二值化</string>
+    </property>
+    <addaction name="action_base"/>
+    <addaction name="actionTHRESH_OTSU"/>
+    <addaction name="actionTHRESH_TRIANGLE"/>
+    <addaction name="action_adapt"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>边缘检测</string>
+    </property>
+    <addaction name="actionSobel"/>
+    <addaction name="actionCanny"/>
+    <addaction name="actionLaplacian"/>
+    <addaction name="actionScharr"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>图像检测与特征匹配</string>
+    </property>
+    <addaction name="action_lunkuojiance"/>
+    <addaction name="action_jiaodianjiance"/>
+    <addaction name="action_connectzone"/>
+    <addaction name="actionSURF_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_8">
+    <property name="title">
+     <string>图像拼接与融合</string>
+    </property>
+    <addaction name="action_pinjie"/>
+   </widget>
+   <widget class="QMenu" name="menu_10">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="action_about"/>
+    <addaction name="action_help"/>
+   </widget>
+   <widget class="QMenu" name="menu_11">
+    <property name="title">
+     <string>图像分割</string>
+    </property>
+    <addaction name="action_watershed"/>
+    <addaction name="action_floodFill"/>
+    <addaction name="actionK_Means"/>
+    <addaction name="actionGrabCut"/>
+    <addaction name="actionMeanShift"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_6"/>
+   <addaction name="menu_11"/>
+   <addaction name="menu_7"/>
+   <addaction name="menu_8"/>
+   <addaction name="menu_10"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>50</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_open"/>
+   <addaction name="action_save"/>
+   <addaction name="action_ORB_pinjie"/>
+   <addaction name="action_SURF_pinjie"/>
+   <addaction name="separator"/>
+   <addaction name="action_help"/>
+  </widget>
+  <action name="action_open">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/picture.png</normaloff>:/image/picture.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开图片</string>
+   </property>
+   <property name="toolTip">
+    <string>打开图片</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+K</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/save.png</normaloff>:/image/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存效果图</string>
+   </property>
+   <property name="toolTip">
+    <string>保存效果图</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_clear">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/clear.png</normaloff>:/image/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>清除图像</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/blue_quit.png</normaloff>:/image/blue_quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_back">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/blue_undo.png</normaloff>:/image/blue_undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>还原图像</string>
+   </property>
+  </action>
+  <action name="action_select_scope">
+   <property name="text">
+    <string>选择操作参数</string>
+   </property>
+  </action>
+  <action name="action_bulr">
+   <property name="text">
+    <string>均值滤波</string>
+   </property>
+  </action>
+  <action name="action_boxFilter">
+   <property name="text">
+    <string>方框滤波</string>
+   </property>
+  </action>
+  <action name="action_GaussFilter">
+   <property name="text">
+    <string>高斯滤波</string>
+   </property>
+  </action>
+  <action name="action_midian">
+   <property name="text">
+    <string>中值滤波</string>
+   </property>
+  </action>
+  <action name="action_bilateral">
+   <property name="text">
+    <string>双边滤波</string>
+   </property>
+  </action>
+  <action name="action_equalizehist">
+   <property name="text">
+    <string>直方图均衡化</string>
+   </property>
+  </action>
+  <action name="action_tiaojie_liangdu_duibidu">
+   <property name="text">
+    <string>调节亮度/对比度</string>
+   </property>
+  </action>
+  <action name="action_base">
+   <property name="text">
+    <string>基本二值化方法</string>
+   </property>
+  </action>
+  <action name="actionTHRESH_OTSU">
+   <property name="text">
+    <string>THRESH_OTSU + 基本二值化方法</string>
+   </property>
+  </action>
+  <action name="actionTHRESH_TRIANGLE">
+   <property name="text">
+    <string>THRESH_TRIANGLE + 基本二值化方法</string>
+   </property>
+  </action>
+  <action name="action_adapt">
+   <property name="text">
+    <string>自适应二值化</string>
+   </property>
+  </action>
+  <action name="actionSobel">
+   <property name="text">
+    <string>Sobel算子</string>
+   </property>
+  </action>
+  <action name="actionCanny">
+   <property name="text">
+    <string>Canny算子</string>
+   </property>
+  </action>
+  <action name="actionLaplacian">
+   <property name="text">
+    <string>Laplacian算子</string>
+   </property>
+  </action>
+  <action name="actionScharr">
+   <property name="text">
+    <string>Scharr算子</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>软件说明</string>
+   </property>
+  </action>
+  <action name="action_lunkuojiance">
+   <property name="text">
+    <string>轮廓检测</string>
+   </property>
+  </action>
+  <action name="action_huofu_line">
+   <property name="text">
+    <string>霍夫线变换</string>
+   </property>
+  </action>
+  <action name="action_huofu_yuan">
+   <property name="text">
+    <string>霍夫圆变换</string>
+   </property>
+  </action>
+  <action name="action_jiaodianjiance">
+   <property name="text">
+    <string>角点检测</string>
+   </property>
+  </action>
+  <action name="action_warpAffine">
+   <property name="text">
+    <string>仿射变换</string>
+   </property>
+  </action>
+  <action name="action_logPolar">
+   <property name="text">
+    <string>笛卡尔坐标与极坐标相互转换</string>
+   </property>
+  </action>
+  <action name="actionK_Means">
+   <property name="text">
+    <string>K-均值聚类</string>
+   </property>
+  </action>
+  <action name="action_kx_b">
+   <property name="text">
+    <string>线性变换：y = |kx + b|</string>
+   </property>
+  </action>
+  <action name="action_floodFill">
+   <property name="text">
+    <string>漫水填充（随机种子点）</string>
+   </property>
+  </action>
+  <action name="action_toushibianhuan">
+   <property name="text">
+    <string>透视变换（常用于图片矫正）</string>
+   </property>
+  </action>
+  <action name="action_watershed">
+   <property name="text">
+    <string>分水岭分割</string>
+   </property>
+  </action>
+  <action name="action_hist_line">
+   <property name="text">
+    <string>直方图（线状）</string>
+   </property>
+   <property name="toolTip">
+    <string>直方图（线状）</string>
+   </property>
+  </action>
+  <action name="action_hist_colu">
+   <property name="text">
+    <string>直方图（柱状）</string>
+   </property>
+  </action>
+  <action name="actionGrabCut">
+   <property name="text">
+    <string>GrabCut抠图</string>
+   </property>
+  </action>
+  <action name="actionMeanShift">
+   <property name="text">
+    <string>MeanShift 均值漂移分割</string>
+   </property>
+   <property name="toolTip">
+    <string>MeanShift均值漂移分割</string>
+   </property>
+  </action>
+  <action name="action_connectzone">
+   <property name="text">
+    <string>连通域检测</string>
+   </property>
+  </action>
+  <action name="actionSURF">
+   <property name="text">
+    <string>SURF特征点检测</string>
+   </property>
+   <property name="iconText">
+    <string>SURF特征点检测</string>
+   </property>
+   <property name="toolTip">
+    <string>SURF特征点检测</string>
+   </property>
+  </action>
+  <action name="actionSIFT">
+   <property name="text">
+    <string>SIFT特征点检测</string>
+   </property>
+   <property name="iconText">
+    <string>SIFT特征点检测</string>
+   </property>
+   <property name="toolTip">
+    <string>SIFT特征点检测</string>
+   </property>
+  </action>
+  <action name="actionSURF_2">
+   <property name="text">
+    <string>SURF特征匹配</string>
+   </property>
+  </action>
+  <action name="actionGuidedFilter">
+   <property name="text">
+    <string>导向滤波</string>
+   </property>
+  </action>
+  <action name="actionPoissonFusion">
+   <property name="text">
+    <string>泊松融合</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/blue_help.png</normaloff>:/image/blue_help.png</iconset>
+   </property>
+   <property name="text">
+    <string>帮助</string>
+   </property>
+   <property name="toolTip">
+    <string>帮助</string>
+   </property>
+  </action>
+  <action name="action_SURF_pinjie">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/pinjie.png</normaloff>:/image/pinjie.png</iconset>
+   </property>
+   <property name="text">
+    <string>SURF图像拼接</string>
+   </property>
+   <property name="toolTip">
+    <string>SURF图像拼接</string>
+   </property>
+  </action>
+  <action name="action_ORB_pinjie">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/pinjie2.png</normaloff>:/image/pinjie2.png</iconset>
+   </property>
+   <property name="text">
+    <string>ORB图像拼接</string>
+   </property>
+   <property name="toolTip">
+    <string>ORB图像拼接</string>
+   </property>
+  </action>
+  <action name="action_pinjie">
+   <property name="text">
+    <string>图像拼接</string>
+   </property>
+   <property name="toolTip">
+    <string>图像拼接</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

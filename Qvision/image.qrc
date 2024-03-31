@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/articulation.png</file>
+        <file>image/background.png</file>
+        <file>image/background01.png</file>
+        <file>image/background02.png</file>
+        <file>image/blue_help.png</file>
+        <file>image/blue_path.png</file>
+        <file>image/BR.png</file>
+        <file>image/caricature.png</file>
+        <file>image/cha.png</file>
+        <file>image/chuizhi.png</file>
+        <file>image/clear.png</file>
+        <file>image/help.png</file>
+        <file>image/loading.gif</file>
+        <file>image/logo.ico</file>
+        <file>image/next.png</file>
+        <file>image/picture.png</file>
+        <file>image/prev.png</file>
+        <file>image/QR.png</file>
+        <file>image/save.png</file>
+        <file>image/setting.png</file>
+        <file>image/shuiping.png</file>
+        <file>image/turn-left.png</file>
+        <file>image/turn-right.png</file>
+        <file>image/word.png</file>
+        <file>image/blue_undo.png</file>
+        <file>image/blue_quit.png</file>
+        <file>image/pinjie.png</file>
+        <file>image/pinjie2.png</file>
+    </qresource>
+</RCC>
